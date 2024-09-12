@@ -1,0 +1,76 @@
+<!--.-->
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad1</title>
+    <style>
+        *{
+            text-align: center;
+            font-size: 25px;
+        }
+        #bloque{
+            background-color: rgb(201, 64, 64);
+            color: rgb(211, 182, 129);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 0 0 20px 0;
+        }
+        #bloque h1{
+            font-size: 40px;
+        }
+        #bloque2{
+            background-color: rgb(201, 64, 64);
+            color: rgb(211, 182, 129);
+            border-radius: 10px;
+            padding: 20px 10px 10px 10px;
+            margin: 20px 0 20px 0;
+        }
+        button{
+            width: 700px;
+            border-radius: 20px;
+            padding: 6px;
+            background-color: sandybrown;
+        }
+        button:hover{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="bloque">
+        <h1>Actividad domiciliaria 2</h1>
+        <div class="info">
+            <h2>Escribe un programa en JavaScript que permita al usuario ingresar un número. El programa debe mostrar 
+                un mensaje que indique si el número es divisible entre 3, 5, o ambos (usando la estructura condicional 
+                if-else). Además, el programa debe mostrar una lista de todos los números divisibles entre 3 o 5 en un 
+                rango del 1 al número ingresado, utilizando un bucle for.</h2>
+        </div>
+    </div>
+    <script>
+    let numero = prompt("Ingresa un número: ");
+
+    if(numero % 3 == 0 && numero % 5 == 0){
+        alert("¡El numero es compatible!");
+    }else if(numero % 3 == 0){
+        alert("¡El numero solo es divisible con 3!");
+    } else if (numero % 5 == 0) {
+        alert("¡El numero solo es divisible con 5!");
+    } else {
+        alert("Este numero no es compatible con ninguno de los valores 3 y 5");
+}
+document.write("Números divisibles entre 3 o 5 del 1 al "+numero+"<br>");
+
+for (let i = 1; i <= numero; i++) {
+  if (i % 3 === 0 || i % 5 === 0) {
+    document.write("Número: " + i + "<br>");
+  }
+}
+    </script>
+        <div id="bloque2">
+            <button onclick="location.href='index.html'"> Regresar a menu Index</button>
+            <h2>Taller de programacion web I - Alejandro Valderrama Chumbes</h2>
+        </div>
+</body>
+</html>

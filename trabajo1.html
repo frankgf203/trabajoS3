@@ -1,0 +1,65 @@
+<!--.-->
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad1</title>
+    <style>
+        *{
+            text-align: center;
+            font-size: 25px;
+        }
+        #bloque{
+            background-color: rgb(201, 64, 64);
+            color: rgb(211, 182, 129);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 0 0 20px 0;
+        }
+        #bloque h1{
+            font-size: 40px;
+        }
+        #bloque2{
+            background-color: rgb(201, 64, 64);
+            color: rgb(211, 182, 129);
+            border-radius: 10px;
+            padding: 20px 10px 10px 10px;
+            margin: 20px 0 20px 0;
+        }
+        button{
+            width: 700px;
+            border-radius: 20px;
+            padding: 6px;
+            background-color: sandybrown;
+        }
+        button:hover{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="bloque">
+        <h1>Actividad domiciliaria 1</h1>
+        <div class="info">
+            <h2>Escribe un programa en JavaScript que solicite al usuario ingresar su edad y su salario mensual. 
+                Si la edad es mayor a 25 años y el salario es superior a 3000, muestra un mensaje indicando que puede 
+                aplicar a un crédito bancario. De lo contrario, muestra un mensaje indicando que no cumple con los 
+                requisitos</h2>
+        </div>
+    </div>
+    <script>
+        let edad = prompt("Ingrese su edad: ");
+        let salarioM = prompt("Ingrese su salario por mes: ");
+        if (edad > 25 && salarioM > 3000) {
+            alert("¡Enhorabuena! Usted es apto para realizar un credito bancario.");
+        }else{
+            alert("¡Que mala suerte! Usted no es apto para realizar creditos bancarios.");
+        } 
+    </script>
+        <div id="bloque2">
+            <button onclick="location.href='index.html'"> Regresar a menu Index</button>
+            <h2>Taller de programacion web I - Alejandro Valderrama Chumbes</h2>
+        </div>
+</body>
+</html>
